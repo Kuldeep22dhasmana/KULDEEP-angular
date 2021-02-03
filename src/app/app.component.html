@@ -1,4 +1,6 @@
-<h1>get text box value</h1>
-<input type="text" #box />
-<button (click)="getVal(box.value)"> GET VALUE </button>
-<h2>{{ currentval }}</h2>
+<h1>PROPERTY BINDING & INTERPOLATION</h1>
+<input type="text" [disabled]="disabledBox" [value]="name" />
+<br><br>
+<input type="text" [disabled]="disabledBox" value={{name}} />
+<br><br>
+<button (click)=enableBox()>Enabled TextBox</button>
