@@ -7,11 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'KULDEEP';
-  name='sucheta'
-  disabledBox = true
-  enableBox()
-  {
-    this.disabledBox = false
-
-  }
+  show= "green"
 }

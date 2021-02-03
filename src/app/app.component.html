@@ -1,6 +1,21 @@
-<h1>PROPERTY BINDING & INTERPOLATION</h1>
-<input type="text" [disabled]="disabledBox" [value]="name" />
-<br><br>
-<input type="text" [disabled]="disabledBox" value={{name}} />
-<br><br>
-<button (click)=enableBox()>Enabled TextBox</button>
+<h1>CONDITINS IN ANGULAR</h1>
+<h1 *ngIf='show else elseBlock'>
+    if Block
+</h1>
+
+<ng-template #elseBlock>
+    <h1> else Block </h1>
+</ng-template>
+
+
+<ng-template [ngIf]="show=='red' ">
+    <h1> Red block </h1>
+</ng-template>
+
+<ng-template [ngIf]="show=='blue' ">
+    <h1> Blue block </h1>
+</ng-template>
+
+<ng-template [ngIf]="show=='green' ">
+    <h1> Green block </h1>
+</ng-template>
