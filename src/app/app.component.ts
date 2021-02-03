@@ -7,7 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'KULDEEP';
-  getName(){
-    alert("cooldeep")
+  getVal(event:any)
+  {
+    var val = event.target.value 
+    console.log(val)
   }
 }
