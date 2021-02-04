@@ -1,21 +1,18 @@
-<h1>CONDITINS IN ANGULAR</h1>
-<h1 *ngIf='show else elseBlock'>
-    if Block
-</h1>
-
-<ng-template #elseBlock>
-    <h1> else Block </h1>
-</ng-template>
-
-
-<ng-template [ngIf]="show=='red' ">
-    <h1> Red block </h1>
-</ng-template>
-
-<ng-template [ngIf]="show=='blue' ">
-    <h1> Blue block </h1>
-</ng-template>
-
-<ng-template [ngIf]="show=='green' ">
-    <h1> Green block </h1>
-</ng-template>
+<h1>SWITCH CASE IN ANGULAR</h1>
+<div [ngSwitch]="color">
+    <h2 style="color:red;" *ngSwitchCase="'red'">
+        RED COLOR
+    </h2>
+    <h2 style="color:green;" *ngSwitchCase="'green'">
+        GREEN COLOR
+    </h2>
+    <h2 style="color:blue;" *ngSwitchCase="'blue'">
+        BLUE COLOR
+    </h2>
+    <h2 style="color:yellow;" *ngSwitchCase="'yellow'">
+        YELLOW COLOR
+    </h2>
+    <h2 style="color:gray;" *ngSwitchDefault>
+        DEFAULT COLOR
+    </h2>
+</div>
