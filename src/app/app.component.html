@@ -1,18 +1,11 @@
-<h1>SWITCH CASE IN ANGULAR</h1>
-<div [ngSwitch]="color">
-    <h2 style="color:red;" *ngSwitchCase="'red'">
-        RED COLOR
-    </h2>
-    <h2 style="color:green;" *ngSwitchCase="'green'">
-        GREEN COLOR
-    </h2>
-    <h2 style="color:blue;" *ngSwitchCase="'blue'">
-        BLUE COLOR
-    </h2>
-    <h2 style="color:yellow;" *ngSwitchCase="'yellow'">
-        YELLOW COLOR
-    </h2>
-    <h2 style="color:gray;" *ngSwitchDefault>
-        DEFAULT COLOR
-    </h2>
-</div>
+<h1>FOR LOOP IN ANGULAR</h1>
+<table border="5px">
+    <td>name</td>
+    <td>age</td>
+    <td>email</td>
+    <tr *ngFor= "let item of data">
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.email}}</td>
+    </tr>
+</table>
