@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'KULDEEP';
-  getVal(val:any)
+  getUserValue(value:string)
   {
-    console.log(val)
+    console.log(value)
   }
 }
