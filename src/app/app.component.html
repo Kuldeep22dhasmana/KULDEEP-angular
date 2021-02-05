@@ -1,5 +1,9 @@
-<app-header></app-header>
 
-<h1>MAKE HEADER & FOOTER IN ANGULAR</h1>
+<h1>STYLE BINDING</h1>
 
-<app-footer></app-footer>
+<h2 style="color: red;">HEADER</h2>
+<h2 [style.color]="'green'">HEADER1</h2>
+<h2 [style.color]="color">Dynamic Style</h2>
+<h2 [style.color]="err?'red':'green'">Condition Style</h2>
+
+<button (click)="updateColor()">Update Color</button>
