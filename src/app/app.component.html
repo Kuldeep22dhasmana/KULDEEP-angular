@@ -1,10 +1,17 @@
-<h1>ADD BOOTSTRAP IN ANGULAR</h1>
+<p>
+  <ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
 
+<h2>
+  <ngb-alert [dismissible]="false">
+    <strong>DANGER!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</h2>
 
-<p *ngFor="let alert of alerts">
-    <ngb-alert [type]="alert.type" (closed)="close(alert)">{{ alert.message }}</ngb-alert>
-  </p>
-  <p>
-    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
-  </p>
-  
+<h2>
+  <ngb-alert [dismissible]="true">
+    <strong>DANGER!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</h2>
