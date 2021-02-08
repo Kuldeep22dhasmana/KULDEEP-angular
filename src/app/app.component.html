@@ -1,13 +1,5 @@
-<h1>You can easily control dropdowns programmatically using the exported dropdown instance.</h1>
+<h1>BASIC RATING</h1>
 
-<div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
-  <button class="btn btn-outline-dark mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()"> Dropdown</button>
-  <div ngbDropdownMenu aria-labelledby="dropdownManual">
-    <button ngbDropdownItem style="color: saddlebrown;">Action - 1</button>
-    <button ngbDropdownItem style="color: salmon;">Another Action</button>
-    <button ngbDropdownItem style="color: sandybrown;">Something else is here</button>
-  </div>
-</div>
-
-<button class="btn btn-outline-success mr-2" (click)="$event.stopPropagation(); myDrop.open();"><strong> From outside</strong></button>
-<button class="btn btn-outline-danger mr-2" (click)="$event.stopPropagation(); myDrop.close();"><b>Close from outside</b></button>
+<ngb-rating [(rate)]="currentRate"></ngb-rating>
+<hr>
+<pre>Rate: <b>{{currentRate}}</b></pre>
