@@ -7,11 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'KULDEEP';
-  model = {
-    left: true,
-    middle: false,
-    right: false
-  };
 }
 
 
