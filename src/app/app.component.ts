@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'KULDEEP';
-  currentRate =5;
-
+  selected = 0;
+  hovered = 0;
+  readonly = false;
 }
 
 
