@@ -1,29 +1,14 @@
-<p>
-  <ngb-alert [dismissible]="false" style="background-color: tomato;">
-    <strong>Warning!</strong> Better check yourself, you're not looking too good.
-  </ngb-alert>
-</p>
-
-<h2>
-  <ngb-alert [dismissible]="false" style="background-color: yellowgreen;">
-    <strong>DANGER!</strong> Better check yourself, you're not looking too good.
-  </ngb-alert>
-</h2>
-
-<h2>
-  <ngb-alert [dismissible]="true" style="background-color: saddlebrown;">
-    <strong>Holder!</strong> Miss u 
-  </ngb-alert>
-</h2>
-
-<h2>
-  <ngb-alert type="custom" [dismissible]="false" style="background-color: royalblue;"><strong>Whoa!</strong> This is a custom alert.</ngb-alert>
-</h2>
-
-
-<h3>
-  <ngb-alert style="background-color: slateblue;">
-    This alert's type is success and it's not dismissible because the config has been customized
-  </ngb-alert>
-</h3>
-
+<h1>Checkbox buttons</h1>
+<div class="btn-group btn-group-toggle">
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.left"> Left (pre-checked)
+  </label>
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Middle
+  </label>
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.right"> Right
+  </label>
+</div>
+<hr>
+<pre>{{model | json}}</pre>
