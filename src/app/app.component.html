@@ -1,8 +1,15 @@
-<h1>Meridian</h1>
-<ngb-timepicker [(ngModel)]="time" [meridian]="meridian"></ngb-timepicker>
-<button class="btn btn-sm btn-outline-{{meridian ? 'success' : 'danger'}}" (click)="toggleMeridian()">
-    Meridian - {{meridian ? "ON" : "OFF"}}
-</button>
-<hr>
-<pre>Selected time: {{time | json}}</pre>
+<h1>Add Angular Material</h1>
 
+<button mat-button color="secondary">Angular button</button>
+<button mat-flat-button color="primary">Primary</button>
+<button mat-flat-button color="accent">Accent</button>
+<button mat-flat-button color="warn">Warn</button>
+<button mat-flat-button disabled>Disabled</button>
+<mat-slider max="100" min="1"></mat-slider>
+<mat-slider thumbLabel tickInterval="0"></mat-slider>
+    
+<button mat-fab>Basic</button>
+<button mat-fab color="primary">Primary</button>
+<button mat-fab color="accent">Accent</button>
+<button mat-fab color="warn">Warn</button>
+<button mat-fab disabled>Disabled</button>

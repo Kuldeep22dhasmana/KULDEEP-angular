@@ -7,12 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'KULDEEP';
-  time = {hour: 13, minute: 30};
-  meridian = true;
-
-  toggleMeridian() {
-      this.meridian = !this.meridian;
-  }
 }
 
 
