@@ -1,4 +1,6 @@
-<h1>REUSABLE COMPONENT IN ANGULAR</h1>
-<div *ngFor="let data of users">
-    <app-users [hero]="data"></app-users>
-</div>
+<h1>Send Data child to parent IN ANGULAR</h1>
+    <app-users (parentFunction)="parentFunction($event)"></app-users>
+<br><br><br>
+
+<h1>{{name}}</h1>
+<h1>{{age}}</h1>
