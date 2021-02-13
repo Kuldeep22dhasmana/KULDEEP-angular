@@ -1,2 +1,4 @@
-<h1>PASS DATA PARENT TO CHILD COMPONENT IN ANGULAR</h1>
-<app-users [hero]="data"> </app-users>
+<h1>REUSABLE COMPONENT IN ANGULAR</h1>
+<div *ngFor="let data of users">
+    <app-users [hero]="data"></app-users>
+</div>

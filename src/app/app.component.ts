@@ -7,11 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'KULDEEP';
-  data = {
-    name:'suchi',
-    age:21,
-    email:'suchi@gmail.com'
-  }
+  users = [
+    {
+      name: 'peter',
+      age: 22,
+      address: 'dehradun'
+    },
+    {
+      name: 'goldy',
+      age: 20,
+      address:"delhi" 
+    },
+    {
+      name: 'king',
+      age: 45,
+      address: "haridwar"
+    },
+    {
+      name: 'oscar',
+      age:2,
+      address:"lucknow" 
+    }
+  ]
 }
 
 
