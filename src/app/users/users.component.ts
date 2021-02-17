@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-users',
@@ -7,14 +7,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
-@Output() parentFunction:EventEmitter<any> =new EventEmitter()
   constructor() { }
 
   ngOnInit(): void {
-  }
-  sendData(){
-    let data = {name:'suchii', age:22}
-    this.parentFunction.emit(data)
-  }
-
+}
 }

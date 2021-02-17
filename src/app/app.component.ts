@@ -7,14 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'KULDEEP';
-  name='';
-  age='';
-  parentFunction(data:any)
-  {
-    console.log(data)
-    this.name=data.name;
-    this.age=data.age;
-  }
 }
 
 
