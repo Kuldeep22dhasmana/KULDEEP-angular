@@ -1,24 +1,12 @@
-<h1>button</h1>
+<p>Default pagination:</p>
+<ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
 
- <h2> spinner-border </h2>
- <button class="btn btn-primary" type="button" disabled>
-  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-  <span class="visually-hidden"></span>
- </button> <br> <br>
- <button class="btn btn-primary" type="button" disabled>
-  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-  Loading...
- </button>
+<p>No direction links:</p>
+<ngb-pagination [collectionSize]="70" [(page)]="page" [directionLinks]="false"></ngb-pagination>
 
-     <br><br><br>
+<p>With boundary links:</p>
+<ngb-pagination [collectionSize]="70" [(page)]="page" [boundaryLinks]="true"></ngb-pagination>
 
-  <h2> spinner-grow </h2>
+<hr>
 
-  <button class="btn btn-primary" type="button" disabled>
-    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-    <span class="visually-hidden"></span>
-  </button> <br><br>
-  <button class="btn btn-primary" type="button" disabled>
-    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-    Loading...
-  </button>
+<pre>Current page: {{page}}</pre>
